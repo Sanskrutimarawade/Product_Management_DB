@@ -21,7 +21,6 @@ namespace ProductManagement.Api.Controllers
             var products = await _context.Products.ToListAsync();
             return Ok(products);
         }
-
         [HttpGet("{id}")]
         public async Task<IActionResult> GetProductById(int id)
         {
@@ -33,6 +32,7 @@ namespace ProductManagement.Api.Controllers
             }
             return Ok(product);
         }
+
     }
 
 
